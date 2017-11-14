@@ -1,0 +1,98 @@
+ul.a {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+ul.a > li {
+    float: left;
+}
+ul.a > li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+ul.a > li a:hover {
+    background-color: #111111;
+}
+
+body{
+	background: url(bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	counter-reset: section;
+}
+
+.BOX{
+	color: rgba(160, 193, 199, 0.973);
+	margin: 2em;
+	padding: 2em;
+	background: rgba(0, 0, 0, 0.966);
+}
+
+.Title{
+	text-align: center;
+	font-size: 8em;
+	font-family: 'Satisfy', cursive;
+	font-weight: bold;
+	color: black;	
+	height: 1em;
+	margin: 2.5em;
+	padding: 1em;
+}
+
+h1{
+	color: rgba(8, 74, 112, 0.945);
+	text-align: center;
+	font-size: 4em; 
+	counter-reset: subsection;
+}
+
+h1::before{
+	counter-increment: section;
+	content: counter(section) ". ";
+}
+
+h2{
+	color: rgba(53, 78, 167, 0.596);
+	font-size: 2em;
+	counter-reset: subsubsection;
+}
+
+h2::before{
+	counter-increment: subsection;
+	content: counter(section) "." counter(subsection) " ";
+}
+
+h3{
+	color: rgba(7, 124, 104, 0.788);
+	font-size: 1.35em;
+}
+
+h3::before{
+	counter-increment: subsubsection;
+	content: counter(section) "." counter(subsection) "." counter(subsubsection) " ";
+}
+
+pre{
+	font-size: 2em;
+	font-weight: bold;
+}
+
+table{
+	border: 0.125em solid rgba(61, 139, 41, 0.966); 
+}
+
+.Tabelle{
+	border-right: 0.125em solid rgba(61, 139, 41, 0.966);
+}
+
+.Merke{
+	border: 0.5em solid rgba(18, 3, 71, 0.966);
+	background: rgba(21, 40, 214, 0.733);
+}

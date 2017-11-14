@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Information für die Quizzes">
+		<link rel="stylesheet" type="text/css" href="StyleSheet.css" >
+		<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+		<title>CSS</title>
+	</head>
+	
+	<body>
+		<article>
+			<ul class="a">
+				<li><a href="index.html">Inhalt</a></li>
+				<li><a href="CheatSheet_Web.html">Web</a></li>
+				<li><a href="CheatSheet_HTML.html">HTML</a></li>
+				<li><a href="CheatSheet_CSS.html">CSS</a></li>
+			</ul>			
+		</article>
+		<div class="Title">
+			Cheat Sheet 
+		</div>
+		<div class="BOX">
+			<article>
+				<h1>CSS</h1>
+				<hr/>
+				<section id="CSS Syntax">
+					<h2>CSS Syntax</h2>
+					<p>					
+						Ein CSS-Regelsatz besteht aus einem Selektor und einem Deklarationsblock. Der Selektor zeigt auf das HTML-Element, das man stylen möchte.
+						Der Deklarationsblock enthält eine oder mehrere Deklarationen, die durch Semikolons getrennt sind. Jede Deklaration enthält einen 
+						CSS-Eigenschaftsnamen und einen Wert, der durch einen Doppelpunkt getrennt ist. Eine CSS-Deklaration endet immer mit einem Semikolon, und 
+						Deklarationsblöcke sind von geschweiften Klammern umgeben.
+					</p>
+					<pre>
+						Selector {															
+							Property: Value;					
+						}									 
+					</pre>
+					<pre>
+					   Bsp:	h1 {
+							color: blue;
+							}
+					</pre>
+					<h3>Gruppierte Selektoren</h3>
+					<p>
+						Wenn man Elemente mit den gleichen Stildefinitionen hat, ist es besser, die Selektoren zu gruppieren, um den Code zu minimieren. Um 
+						Gruppenselektoren zu gruppieren, trennt man jeden Selektor mit einem Komma. z.B.:
+					</p>
+					<pre>
+						h1,h2,h3 {
+							color: red;
+						}
+					</pre>
+				</section>
+				<hr/>
+				<section id="CSS Kommentare">
+					<h2>CSS Kommentare</h2>
+					<pre>
+						/* This is a single-line comment */
+					</pre>
+				</section>
+				<hr/>
+				<section id="Farbe">
+					<h2>Farben</h2>
+					<p>
+						<strong>Farbnamen: </strong>In HTML kann eine Farbe mit einem Farbnamen angegeben werden. 
+						<a href="https://www.w3schools.com/colors/colors_names.asp">Diese Farben gibt es</a>
+					</p>
+					<p>
+						In HTML kann eine Farbe mit einem Hexadezimalwert in dieser Form angegeben werden:<br/>
+						#rrggbb<br/>
+						Wo <b>rr (rot)</b>, <b>gg (grün)</b> und <b>bb (blau)</b> hexadezimale Werte zwischen 00 und ff (wie dezimal 0-255) sind. Beispielsweise wird #ff0000 als rot 
+						angezeigt, da Rot auf den höchsten Wert (ff) gesetzt ist und die anderen auf den niedrigsten Wert (00).
+					</p>
+				</section>
+				<hr/>
+				<section id="Hintergründe">
+					<h2>Hintergründe</h2>
+					<p>
+						<h3>background-color Property</h3>
+						<p>
+							Der background-color Property gibt die Hintergrundfarbe eines Elements an. Syntax:
+						</p>
+						<pre>
+							background-color: colorname;
+						</pre>
+						<h3>background-image Property</h3>
+						<p>
+							Syntax:
+						</p>
+						<pre>
+							background-image: url("image-url");
+						</pre>
+						<p>
+							<h4>Wiederhole Horizontal oder Vertikal</h4>
+							<p>
+								syntax: für horizontales Wiederholen
+							</p>
+							<pre>
+								background-repeat: repeat-x;
+							</pre>
+							<p>
+								Für vertikales Wiederholen x mit y ersetzen (repeat-y).
+							</p>
+							<h4>Fixieren</h4>
+							<p>
+								Um festzulegen, dass das Hintergrundbild fixiert werden soll (nicht mit dem Rest der Seite mitscrollen), verwendet man die 
+								Eigenschaft background-attachment.
+							</p>
+							<pre>
+								background-attachment: fixed;
+							</pre>
+						</p>
+					</p>				
+				</section>
+				<hr/>
+				<section id="Text">
+					<h2>Text</h2>
+					<p>
+						<h3>Text Farbe</h3>
+						<p>
+							Der color Property wird verwendet, um die Farbe des Textes festzulegen. z.B.:
+						</p>
+						<pre>
+							h1 {
+								color: green;
+							}
+						</pre>
+						<h3>Textausrichtung</h3>
+						<p>
+							Der text-align Property wird verwendet, um die horizontale Ausrichtung eines Textes festzulegen. Ein Text kann links oder rechts
+							ausgerichtet, zentriert oder justified sein.
+							<ul>
+								<li><b>Links: </b>text-align: left;</li>
+								<li><b>Rechts: </b>text-align: right;</li>
+								<li><b>Zentriert: </b>text-align: center;</li>
+								<li><b>justified: </b>text-align: justify;</li>
+							</ul>
+							Wenn die Textausrichtungseigenschaft auf justified gesetzt ist, wird jede Zeile so ausgedehnt, dass jede Zeile gleich breit ist 
+							und die linken und rechten Ränder gerade sind (wie in Zeitschriften und Zeitungen).
+						</p>
+						<h3>Text Dekoration</h3>
+						<p>
+							Der text-decoration property wird verwendet, um Dekorationen im Text zu setzen oder zu entfernen.
+							<ul>
+								<li>text-decoration: none;</li>
+								<li>text-decoration: overline;</li>
+								<li>text-decoration: line-through;</li>
+								<li>text-decoration: underline;</li>
+							</ul>
+						</p>
+						<h3>Textumwandlung</h3>
+						<p>
+							Der text-transform property wird verwendet, um Groß- und Kleinbuchstaben in einem Text anzugeben. Es kann verwendet werden, 
+							um alles in Groß- oder Kleinbuchstaben umzuwandeln oder den ersten Buchstaben jedes Wortes großzumachen.
+							<ul>
+								<li>text-transform: uppercase;</li>
+								<li>text-transform: lowercase;</li>
+								<li>text-transform: capitalize;</li>
+							</ul>
+						</p>
+					</p>			
+				</section>
+				<hr/>
+				<section id="Fonts">
+					<h2>Fonts</h2>
+					<p>
+						Die CSS font properties definieren die Schriftfamilie, die Kühnheit, die Größe und den Stil eines Textes.
+						<h3>Unterschied zwischen Serif und Sans-Serif Fonts</h3>
+						<p>
+							<b>Serif-Schriften</b> haben kleine Linien an den Enden bei einigen Buchstaben.<br/>
+							<b>Sans-serif</b> Fonts haben keine Linien an den Enden der Buchstaben.
+						</p>
+						<h3>Font Family</h3>
+						<p>
+							Die Schriftfamilie eines Textes wird mit dem font-family Property gesetzt. Sie sollten mehrere Fontnamen als "Fallback" -System 
+							enthalten. Wenn der Browser die erste Schrift nicht unterstützt, versucht er die nächste Schriftart und so weiter. Beginnen Sie mit 
+							der Schriftart, die Sie wollen, und enden mit einer generischen Familie, um den Browser eine ähnliche Schriftart in der generischen 
+							Familie zu wählen, wenn keine anderen Schriftarten verfügbar sind.
+						</p>
+						<p>
+							<b>Anmerkung: </b>Wenn der Name einer Schriftfamilie mehr als ein Wort ist, muss es in Anführungszeichen sein, wie zB: "Times New Roman". 
+							Mehr als eine Schriftfamilie wird in einer durch Kommas getrennten Liste angegeben. z.B.:
+						</p>
+						<pre>
+							font-family: "Times New Roman", Times, serif;
+						</pre>
+						<h3>Font Style</h3>
+						<p>
+							Die Eigenschaft font-style wird hauptsächlich verwendet, um kursiven Text anzugeben. Diese Eigenschaft hat drei Werte:
+							<ul>
+								<li><b>normal</b> - Der Text wird normal angezeigt</li>
+								<li><b>italic</b> - Der Text wird kursiv dargestellt</li>
+								<li><b>oblique</b> - Der Text ist "lehnend" (oblique ist sehr ähnlich italic, aber wird weniger unterstützt)</li>
+							</ul>
+							z.B.:
+						</p>
+						<pre>
+							font-style: italic;
+						</pre>
+						<h3>Font Size</h3>
+						<p>
+							Der font-size Property legt die Größe des Textes fest. Der font-size Wert kann eine absolute oder relative Größe sein.<br/>
+							Absolut Size:
+							<ul>
+								<li>Setzt den Text auf eine angegebene Größe</li>
+								<li>Erlaubt einem Benutzer nicht, die Textgröße in allen Browsern zu ändern (schlecht für Zugänglichkeitsgründe)</li>
+								<li>Absolute Größe ist nützlich, wenn die physikalische Größe der Ausgabe bekannt ist</li>
+							</ul>
+							Relative size:
+							<ul>
+								<li>Legt die Größe relativ zu den umgebenden Elementen fest</li>
+								<li>Ermöglicht einem Benutzer, die Textgröße in Browsern zu ändern</li>
+							</ul>
+							Die Einstellung der Textgröße mit Pixeln gibt Ihnen die volle Kontrolle über die Textgröße. Damit Benutzer die Größe des Textes ändern 
+							können (im Browser-Menü), verwenden viele Entwickler em statt Pixel. (1em = 16px: pixels/16=em) Syntax.:
+						</p>
+						<pre>
+							font-size: 2.5em; /* 40px/16=2.5em */
+						</pre>
+						<h3>Font Weight</h3>
+						<p>
+							Der font-weight Property gibt das Gewicht einer Schriftart an. (normal oder bold!).
+						</p>
+						<pre>
+							font-weight: bold;
+						</pre>
+					</p>			
+				</section>
+				<hr/>
+				<section id="Link">
+					<h2>Link gestallten</h2>
+					<p>
+						Links können mit jedem CSS Property gestalltet werden(z.B. color, font-family, background, etc.). Darüber hinaus können Links 
+						unterschiedlich gestylt werden, je nachdem, in welchem ​​Zustand sie sich befinden. Die vier Linkszustände sind:
+						<ul>
+							<li><b>a:link</b> - ein normaler, nicht besuchter Link</li>
+							<li><b>a:visited</b> - ein Link, den der Benutzer besucht hat</li>
+							<li><b>a:hover</b> - ein Link, wenn der Benutzer mit der Maus darüber fährt</li>
+							<li><b>a:active</b> - ein Link, wenn er gerade geklickt wird</li>
+						</ul>
+						Bei der Einstellung des Stils für mehrere Link-Zustände gibt es einige Regeln:
+						<ul>
+							<li>a:hover <b>muss</b> nacha:link und a:visited kommmen</li>
+							<li>a:active <b>muss</b> nach a:hover kommen</li>
+						</ul>
+						z.B.:
+					</p>
+					<pre>
+						/* unvisited link */
+						a:link {
+							color: red;
+						}
+			
+						/* visited link */
+						a:visited {
+							color: green;
+						}
+			
+						/* mouse over link */
+						a:hover {
+							color: hotpink;
+						}
+			
+						/* selected link */
+						a:active {
+							color: blue;
+						}
+					</pre>
+				</section>
+				<hr/>
+				<section id="Kombinatoren">
+					<h2>CSS Kombinatoren</h2>
+					<p>
+						Ein CSS-Selektor kann mehr als einen einfachen Selektor enthalten. Zwischen den einfachen Selektoren können wir einen Kombinator 
+						einschließen. Ein Kombinator ist etwas, das die Beziehung zwischen den Selektoren erklärt. Es gibt vier verschiedene Kombinatoren in CSS3:
+						<ul>
+							<li>descendant selector (Leertaste)</li>
+							<li>child selector (>)</li>
+							<li>adjacent sibling selector (+)</li>
+							<li>general sibling selector (~)</li>
+						</ul>
+						<h3>Descendant selector</h3>
+						<p>
+							Der Nachkommenselektor passt zu allen Elementen, die Nachkommen eines bestimmten Elements sind. Im folgenden Beispiel werden alle 
+							&lt;p&gt; Elemente innerhalb von &lt;div&gt; Elementen ausgewählt:
+						</p>
+						<pre>
+							div p {
+								background-color: yellow;
+							}
+						</pre>
+						<h3>Child Selector</h3>
+						<p>
+							Der Kinderselektor wählt alle Elemente aus, die die unmittelbaren Kinder eines bestimmten Elements sind. Im folgenden Beispiel werden 
+							alle &lt;p&gt;-Elemente ausgewählt, die unmittelbare Kinder eines &lt;div&gt;-Elements sind:
+						</p>
+						<pre>
+							div > p {
+								background-color: yellow;
+							}
+						</pre>
+						<h3>Adjacent Sibling Selector</h3>
+						<p>
+							Der benachbarte Geschwisterselektor wählt alle Elemente aus, die die benachbarten Geschwister eines bestimmten Elements sind. 
+							Geschwisterelemente müssen das gleiche übergeordnete Element haben, und "benachbart" bedeutet "unmittelbar nach". Im folgenden Beispiel 
+							werden alle &lt;p&gt; Elemente ausgewählt, die unmittelbar nach &lt;div&gt; Elementen platziert werden:
+						</p>
+						<pre>
+							div + p {
+								background-color: yellow;
+							}
+						</pre>
+						<h3>General Sibling Selector</h3>
+						<p>
+							Der allgemeine Geschwisterselektor wählt alle Elemente aus, die Geschwister eines bestimmten Elements sind. 
+							Das folgende Beispiel wählt alle &lt;p&gt; Elemente, die Geschwister von &lt;div&gt; Elementen sind:
+						</p>
+						<pre>
+							div ~ p {
+								background-color: yellow;
+							}
+						</pre>
+					</p>
+				</section>
+				<hr/>
+				<section id="Pseudo Klassen">
+					<h2>Pseudo Klassen</h2>
+					<pre>
+						selector:pseudo-class {
+							property:value;
+						}
+					</pre>
+					<p>
+						z.B.: Bei Links: a:active.
+					</p>
+				</section>
+				<hr/>
+				<section id="Listen">
+					<h2>Listen</h2>
+					<p>
+						<h3>list-style-type property</h3>
+						<pre>
+							ul.a {
+								list-style-type: circle;
+							}
+			
+							ul.b {
+								list-style-type: square;
+							}
+			
+							ol.c {
+								list-style-type: upper-roman;
+							}
+			
+							ol.d {
+								list-style-type: lower-alpha;
+							}
+						</pre>
+						<p>
+							Das ul.a wird verwendet um unterschiedlichen Listen unterschiedliche Gestaltung zu geben. Im HTML-Code einfach das eingeben:
+						</p>
+						<pre>
+							&lt;ul class="a"&gt;
+								&lt;li&gt;Test&lt;/li&gt;
+							&lt;/ul&gt;
+						</pre>
+						<p>
+							Wobei das class="a" für den Buchstaben steht der nach dem Punkt bei ul.a kommt
+						</p>
+						<h3>list-style-image property</h3>
+						<pre>
+							ul {
+								list-style-image: url('sqpurple.gif');
+							}
+						</pre>
+						<p>
+							Wird verwendet um ein bestimmtes Bild als Aufzählungszeichen zu verwenden.
+						</p>
+						<h3>list-style-position property</h3>
+						<pre>
+							ul {
+								list-style-position: inside;
+							}
+							ul {
+								list-style-position: outside;
+							}
+						</pre>
+						<p>
+							Der list-style-position Property gibt an, ob die Listenelementmarken innerhalb oder außerhalb des Inhaltsflusses angezeigt werden sollen.
+						</p>
+						<h3>Standardeinstellungen entfernen</h3>
+						<pre>
+							ul {
+								list-style-type: none;
+								margin: 0;
+								padding: 0;
+							}
+						</pre>
+					</p>
+				</section>
+				<hr/>
+				<section id="Tabellen">
+					<h2>Tabellen</h2>
+					<h3>Tabellenränder</h3>
+					<p>
+						Verwenden Sie den <b>border</b> Property, um Tabellenränder in CSS anzugeben.
+					</p>
+					<pre>
+						table, th, td {
+						   border: 1px solid black;
+						}
+					</pre>
+					<h3>Tabellenränder verkleinern</h3>
+					<p>
+						Mit dem <b>border-collapse</b> Property legen Sie fest, ob die Tabellenränder in einen einzelnen Rahmen zusammengefasst werden sollen.
+					</p>
+					<pre>
+						table {
+							border-collapse: collapse;
+						}
+					</pre>
+					<h3>Tabellenhöhe und -breite</h3>
+					<p>
+						Breite und Höhe einer Tabelle werden durch die Properties <b>width</b> und <b>height</b> definiert.
+					</p>
+					<h3>Gestreifte Tabellen</h3>
+					<p>
+						Verwenden Sie für zebra-gestreifte Tabellen den Selektor <b>nth-child()</b> und fügen Sie allen geraden (oder ungeraden) Tabellenzeilen 
+						eine Hintergrundfarbe hinzu: z.B.
+					</p>
+					<pre>
+						tr:nth-child(even){
+							background-color: #f2f2f2
+						}
+					</pre>
+				</section>
+				<hr/>
+				<section id="Border">
+					<h2>Border</h2>
+					<p>
+						Der <b>border-style</b> Property gibt an, welche Art von Rahmen angezeigt werden soll. Er kann ein bis vier Werte haben (top border, right border, bottom border, und left border)
+					</p>
+					<table>
+						<caption>Folgende Werte sind zulässig</caption>
+						<tr>
+							<th class="Tabelle">Wert</th>
+							<th>Beschreibung</th>
+						</tr>
+						<tr>
+							<td class="Tabelle">dotted</td>
+							<td>Definiert einen gepunkteten Rahmen</td>
+						</tr>
+						<tr>
+							<td class="Tabelle">dashed</td>
+							<td>Definiert einen gestrichelten Rahmen</td>
+						</tr>
+						<tr>
+							<td class="Tabelle">double</td>
+							<td>Definiert einen doppelten Rahmen</td>
+						</tr>
+						<tr>
+							<td class="Tabelle">solid</td>
+							<td>Definiert eine feste Umrandung</td>
+						</tr>
+						<tr>
+							<td class="Tabelle">groove</td>
+							<td>Definiert einen 3D-gerillten Rand.</td>
+						</tr>
+						<tr>
+							<td class="Tabelle">ridge</td>
+							<td>Definiert einen 3D-gerippten Rahmen.</td>
+						</tr>
+						<tr>
+							<td class="Tabelle">inset</td>
+							<td>Definiert einen 3D-Einfügungsrahmen.</td>
+						</tr>
+						<tr>
+							<td class="Tabelle">outset</td>
+							<td>Definiert einen 3D-Ausgangsrahmen.</td>
+						</tr>
+						<tr>
+							<td class="Tabelle">none</td>
+							<td>Definiert keine Grenze</td>
+						</tr>
+						<tr>
+							<td class="Tabelle">hidden</td>
+							<td>Definiert eine verborgene Grenze</td>
+						</tr>
+					</table>
+					<pre>
+						p.dotted {border-style: dotted;}
+					</pre>
+							
+					<h3>Rahmenbreite</h3>
+					<p>
+						Die Eigenschaft border-width gibt die Breite der vier Rahmen an. Er kann von ein bis vier Werte haben(top border, right border, 
+						bottom border und left border). z.B.:
+					</p>
+					<pre>
+						p.three {
+							border-style: solid;
+							border-width: 2px 10px 4px 20px;
+						}
+					</pre>
+					<h3>Rahmenfarben</h3>
+					<p>
+						Mit dem <b>border-color</b> Property wird die Farbe der vier Rahmen festgelegt.
+					</p>
+					<h3>Rahmen - Individueller Seiten</h3>
+					<p>
+						In CSS gibt es auch Properties zum Angeben der einzelnen Ränder (oben, rechts, unten und links):
+					</p>
+					<pre>
+						p {
+							border-top-style: dotted;
+							border-right-style: solid;
+							border-bottom-style: dotted;
+							border-left-style: solid;
+						}
+					</pre>
+					<h3>Border: Shorthand-Propety</h3>
+					<p>
+						Der <b>border</b> Property ist ein shorthand Property für die folgenden einzelnen <b>border</b> Properties:
+						<ul>
+							<li>border-width</li>
+							<li>border-style</li>
+							<li>border-color</li>
+						</ul>
+						z.B.:
+					</p>
+					<pre>
+						p {
+							border: 5px solid red;
+						}
+					</pre>
+					<h3>Runde Rahmen</h3>
+					<p>
+						Der <b>border-radius</b> Property wird verwendet, um einem Element abgerundete Ränder hinzuzufügen. z.B.
+					</p>
+					<pre>
+						p {
+							border: 2px solid red;
+							border-radius: 5px;
+						}
+					</pre>
+				</section>
+				<hr/>
+				<section id="Counters">
+					<h2>CSS Counters</h2>
+					<p>
+						<b>CSS Counters</b> sind "Variablen", die von CSS verwaltet werden und deren Werte durch CSS-Regeln inkrementiert werden können (um zu verfolgen, 
+						wie oft sie verwendet werden). Mithilfe von Zählern können Sie das Erscheinungsbild von Inhalten basierend auf der Platzierung im Dokument anpassen.
+					</p>
+					<p>
+						Um mit CSS Counters zu arbeiten, werden wir die folgenden Properties verwenden:
+					</p>
+					<table>
+						<tr>
+							<th class="Tabelle">Property</th>
+							<th>Beschreibung</th>
+						</tr>
+						<tr>
+							<td class="Tabelle"><b>counter-reset</b></td>
+							<td>Erstellt oder setzt einen Zähler zurück</td>
+						</tr>
+						<tr>
+							<td class="Tabelle"><b>counter-increment</b></td>
+							<td>Inkrementiert einen Zählerwert</td>
+						</tr>
+						<tr>
+							<td class="Tabelle"><b>content</b></td>
+							<td>Fügt generierten Inhalt ein</td>
+						</tr>
+						<tr>
+							<td class="Tabelle"><b>counter()</b> oder <b>counters()</b> Funktion</td>
+							<td>Fügt den Wert eines Zählers zu einem Element hinzu</td>
+						</tr>
+					</table>
+					<p>
+						Um einen CSS Counter verwenden zu können, muss dieser zuerst mit <b>counter-reset</b> erstellt werden.	
+					</p>
+
+					<h3>Nested Counters</h3>
+					<p>
+						Bsp:
+					</p>
+					<pre>
+						body {
+							counter-reset: section;
+						}
+						
+						h1 {
+							counter-reset: subsection;
+						}
+						
+						h1::before {
+							counter-increment: section;
+							content: "Section " counter(section) ". ";
+						}
+						
+						h2::before {
+							counter-increment: subsection;
+							content: counter(section) "." counter(subsection) " ";
+						}
+					</pre>
+					<p>
+						Das wird dann so angezeigt: 
+					</p>
+					<img src="Nested_Counters.png" alt="Ausgabe auf der Website"/>
+					<p>
+						Man kann das natürlich mit <b>subsubsection</b>, ... für z.B. <b>&lt;h3&gt;</b>, ... fortführen.<br/>
+						Das funktioniert auch für Listen. z.B.:
+					</p>
+					<pre>
+						ol {
+							counter-reset: section;
+							list-style-type: none;
+						}
+						
+						li::before {
+							counter-increment: section;
+							content: counters(section,".") " ";
+						}
+					</pre>
+				</section>
+				<hr/>
+				<section id="Klassen">
+					<h2>Klassen</h2>
+					<p>
+						Der <b>.class Selektor</b> wählt Elemente mit einem bestimmten Klassenattribut aus.	Um Elemente mit einer bestimmten Klasse auszuwählen, schreiben Sie ein 
+						Punktzeichen (.) Gefolgt vom Namen der Klasse. Sie können auch angeben, dass nur bestimmte HTML-Elemente von einer Klasse betroffen sein sollen. Beginnen Sie dazu 
+						mit dem Elementnamen und schreiben Sie dann das Punktzeichen (.) gefolgt vom Namen der Klasse. (HTML-Elemente können sich auch auf mehr als eine Klasse beziehen).<br/>
+						Bsp.:
+					</p>
+					<pre>
+						p.Intro {
+							color: yellow;
+						}
+					</pre>
+					<h3>Syntax</h3>
+					<pre>
+						.class {
+							css declarations;
+						}
+					</pre>
+				</section>
+				<hr/>
+				<section id="IDs">
+					<h2>IDs</h2>
+					<p>
+						Der <b>#id Selektor</b> formatiert das Element mit der angegebenen ID. Bsp.:
+					</p>
+					<pre>
+						#firstname { 
+							background-color: yellow;
+						}
+					</pre>
+					<h3>Syntax</h3>
+					<pre>
+						#id {
+							css declarations;
+						}
+					</pre>
+					<table class="Merke">
+						<caption><b>Merke!</b></caption>
+						<tr>
+							<td>Klassen kann man beliebig oft verwenden.<br/>
+								IDs nur einmal!</td>
+						</tr>
+					</table>
+				</section>
+				<hr/>
+				<section id="Box Modell">
+					<h2>CSS Box Modell</h2>
+					<p>
+						Alle HTML-Elemente können als Boxen betrachtet werden. In CSS wird der Begriff "Boxmodell" verwendet, wenn es um Design und Layout geht.
+					</p>
+					<img src="Boxenmodell.png" alt="CSS Boxenmodell"/>
+					<p>
+						Erklärung der verschiedenen Teile:
+						<ul>
+							<li><b>Content</b> - Der Inhalt der Box, in der Text und Bilder angezeigt werden</li>
+							<li><b>Padding</b> - Der Bereich um den Inhalt. Die Polsterung ist transparent</li>
+							<li><b>Border</b> - Ein Rand, der Padding und Content umgibt</li>
+							<li><b>Margin</b> - Der Bereich außerhalb der Grenze. Der Rand ist transparent</li>
+						</ul>
+						Außerdem kann man noch <b>"width: "</b> und <b>"height: "</b> angeben.
+					</p>
+				</section>
+				<hr/>
+				<section id="Float und Clear">
+					<h2>CSS Layout - Float und Clear</h2>
+					<p>
+						Der CSS <b>float</b> Property gibt an, wie ein Element im Raum angegeben werden soll.
+					</p>
+					<p>
+						Der CSS <b>clear</b> Property gibt an, welche Elemente können neben dem gelöschten Element und auf welcher Seite in den Raum gestellt werden.
+					</p>
+					<h3>Float</h3>
+					<p>
+						Folgende Werte sind Möglich:
+						<ul>
+							<li><b>left</b> - The element floats to the left of its container</li>
+							<li><b>right</b> - The element floats to the right of its container </li>
+							<li><b>none</b> - The element does not float (will be displayed just where it occurs in the text). This is default</li>
+							<li><b>inherit</b> - The element inherits the float value of its parent</li>
+						</ul>
+					</p>
+					<h3>Clear</h3>
+					<p>Näheres dauzu <a href="https://www.w3schools.com/css/css_float.asp">hier</a>!</p>
+				</section>
+			</article>
+		</div>
+	</body>
+</html>

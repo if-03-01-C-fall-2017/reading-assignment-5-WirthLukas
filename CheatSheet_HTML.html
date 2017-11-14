@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Information für die Quizzes">
+		<link rel="stylesheet" type="text/css" href="StyleSheet.css" >
+		<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+		<title>HTML</title>
+	</head>
+	
+	<body>
+		<article>
+			<ul class="a">
+				<li><a href="index.html">Inhalt</a></li>
+				<li><a href="CheatSheet_Web.html">Web</a></li>
+				<li><a href="CheatSheet_HTML.html">HTML</a></li>
+				<li><a href="CheatSheet_CSS.html">CSS</a></li>
+			</ul>			
+		</article>
+		<div class="Title">
+			Cheat Sheet 
+		</div>
+		<div class="BOX">
+			<article>
+				<h1>HTML</h1>
+				<hr/>			
+				<section>
+					<h2>HTML Elemente</h2>
+					<p>
+						Ein HTML-Element besteht normalerweise aus einem Start-Tag und einem End-Tag, mit dem Inhalt dazwischen.
+					</p>
+					<pre>
+						&lt;tagname&gt;Inhalt... &lt;/tagname&gt;
+					</pre>
+					<h3>Void Elements</h3>
+					<p>
+						HTML-Elemente ohne Inhalt werden als <em>void elements</em> bezeichnet. <em>Void elements</em> können im Start-Tag geschlossen werden:<br/>
+						z.B.: &lt;br /&gt; <i>(Zeilenumbruch)</i>
+					</p>
+				</section>
+				<hr/>
+				<section>
+				<h2>DOCTYPE</h2>
+				<p>
+					Die !DOCTYPE Dekleration ist kein HTML-Tag. Sie ist eine Anweisung für den Webbrowser, über welche HTML Version die Seite geschrieben wird.
+					(In HTML 5 sieht das so aus: &lt;!DOCTYPE html&gt;)
+				</p>
+				</section>
+				<hr/>		
+				<section>
+					<h2>Attribute</h2>
+					<p>
+						<ul>
+							<li>Alle HTML-Elemente können Attribute haben</li>
+							<li>Attribute liefern zusätzliche Informationen zu einem Element</li>
+							<li>Attribute werden immer im Start-Tag angegeben</li>
+							<li>Attribute kommen normalerweise in Name/Wert Paare vor. Wie: name = "value"</li>
+						</ul>
+					</p>
+					<h3>Das href-Attribut</h3>
+					<p>
+						HTML-Links werden mit dem &lt;a&gt;-Tag definiert. Die Linkadresse wird im href-Attribut angegeben.<br/>
+						z.B.: &lt;a href="https://www.w3schools.com"&gt;Das ist ein Link&lt;/a&gt;
+					</p>
+					<h3>Das scr-Attribut</h3>
+					<p>
+						HTML-Bilder werden mit dem &lt;img&gt;-Tag definiert. Der Dateiname der Bildquelle wird im src-Attribut angegeben.
+					</p>
+					<h3>Das alt-Attribut</h3>
+					<p>
+						Das alt-Attribut gibt einen alternativen Text an, der verwendet werden soll, wenn ein Bild nicht angezeigt werden kann.
+					</p>
+					<h3>Das lang-Attribut</h3>
+					<p>
+						Die Sprache des Dokuments kann im &lt;html&gt;-Tag mit dem lang-Attribut deklariert werden.
+					</p>
+					<h3>Das title-Attribut</h3>
+					<p>
+						Das Titelattribut liefert zusätzliche "Tool-Tipp" -Informationen, die angezeigt werden wenn man mit der Maus über den
+						Absatz(oder der Überschrift, ...) fährt.
+					</p>
+				</section>
+				<hr/>
+				<section>
+					<h2>Der "html tag"</h2>
+					<ul>
+						<li>Er teilt dem Browser mit, dass es sich um ein HTML-Dokument handelt.</li>
+						<li>Er repräsentiert den Stamm eines HTML-Dokuments.</li>
+						<li>Er ist der Behälter für alle anderen HTML-Elemente (mit Ausnahme des !DOCTYPE tags).</li>
+					</ul>
+				</section>
+				<hr/>
+				<section>
+					<h2>Hervorhebungen eines Textes</h2>
+					<ul>
+						<li><b>Der em tag:</b> macht einen Text hervorgehobener. Wird meist kursiv dargestellt</li>
+						<li><b>Der strong tag:</b> markiert wichtigen Text. Wird fett gedruckt dargestellt</li>
+						<li><b>Der b tag:</b> macht den Text fett gedruckt</li>
+					</ul>
+				</section>
+				<hr/>			
+				<section>
+					<h2>Die beiden wichtigsten HTML Elemente</h2>
+					<h3>Das Head Element</h3>
+					<p>
+						Das Head-Element ist ein Container für Metadaten über das HTML-Dokument. Sie werden nicht angezeigt. Metadaten definieren
+						typischerweise den Dokumententitel, den Zeichensatz, die Stile, die Links, die Skripte und andere Metainformationen.
+					</p>
+					<h4>Das Title Element</h4>
+					<p>
+						Es definiert den Titel des Dokuments und ist in allen HTML/XHTML-Dokumenten erforderlich.
+					</p>
+					<h4>Das Link Element</h4>
+					<p>
+						Es wird verwendet, um mit externen Stylesheets zu verknüpfen.<br/>
+						z.B.: &lt;link rel="stylesheet" type="text/css" href="StyleSheet.css"&gt;
+					</p>
+					<h4>Das Meta Element</h4>
+					<p>
+						Mit ihm werden Zeichensätze, Seitenbeschreibung, Schlüsselwörter, Autor und andere Metadaten festgelegt. Beispiele:<br/>
+					</p>
+					<pre>
+				&lt;meta charset="UTF-8"&gt;
+				&lt;meta name="description" content="Free Web tutorials"&gt;
+				&lt;meta name="keywords" content="HTML,CSS,XML,JavaScript"&gt;
+				&lt;meta name="author" content="John Doe"&gt;
+					</pre>
+					<h3>Das Body Element</h3>
+					<p>
+						Es enthält alle Inhalte eines HTML-Dokuments wie Text, Hyperlinks, Bilder, Tabellen, Listen usw.
+					</p>
+				</section>
+				<hr/>
+				<section>
+					<h2>Weitere wichtige HTML Elemente</h2>
+					<h3>Der Artikel</h3>
+					<p>
+						Das Artikel ELement gibt unabhängige, in sich geschlossene Inhalte an. Ein Artikel sollte selbstverständlich sein und es sollte
+						möglich sein, ihn unabhängig vom Rest der Seite zu verteilen. Syntax:
+					</p>
+					<pre>
+						&lt;article&gt;
+							content
+						&lt;/article&gt;
+					</pre>
+					<h3>Zeilenumbruch</h3>
+					<p>
+						Verwenden Sie &lt;br/&gt;, wenn Sie einen Zeilenumbruch (eine neue Zeile) wollen, ohne einen neuen Absatz zu starten.
+					</p>
+					<h3>Überschriften</h3>
+					<p>
+						Überschriften sind mit den &lt;h1&gt; bis &lt;h6&gt; tags definiert. &lt;h1&gt; wichtigste Überschrift. &lt;h6&gt; 
+						am wenigsten wichtigste Überschrift. z.B.: &lt;h1&gt;Überschrift 1&lt;/h1&gt;
+					</p>
+					<p title="Horizontale Linie">
+						&lt;hr/&gt; definiert eine thematische Veränderung des Inhalts. Wird als horizontale Linie dargestellt.
+					</p>
+					<h3>Paragraphen</h3>
+					<p>
+						Das HTML &lt;p&gt;-Element definiert einen Absatz. Syntax:
+					</p>
+					<pre>
+						&lt;p&gt;
+							Inhalt
+						&lt;/p&gt;
+					</pre>
+					<p>
+						&lt;pre&gt; definiert vorformatierten Text.
+					</p>
+					<h3>Bilder</h3>
+					<p>
+						In HTML werden Bilder mit dem &lt;img&gt;-Tag definiert. Es enthält nur Attribute und hat keinen Schluss-Tag. 
+						Das src-Attribut gibt die URL (Webadresse) des Bildes an. alt-Attribut: siehe Attribute.<br/>
+						Syntax: 
+					</p>
+					<pre>
+						&lt;img scr="url" alt="irgendein Text"/&gt;
+					</pre>
+					<h3>Section</h3>
+					<p>
+						Das &lt;section&gt;-Tag definiert Abschnitte in einem Dokument, wie z. B. Kapitel, Kopfzeilen, Fußzeilen oder andere Abschnitte des Dokuments.<br/>
+						Syntax:
+					</p>
+					<pre>
+						&lt;section&gt;
+							Inhalt
+						&lt;/section&gt;
+					</pre>
+					<h3>Links</h3>
+					<p>
+						HTML-Links sind Hyperlinks. Man kann auf einen Link klicken und zu einem anderen Dokument springen.<br/>
+						Syntax:
+					</p>
+					<pre>
+						&lt;a href="url"&gt;link text&lt;/a&gt;
+					</pre>
+					<p>
+						<strong>Bookmarks: </strong> Zuerst muss man ein Bookmark mit dem id-Attribut machen. z.B.: &lt;h1 id="c1"&gt;Chapter 1&lt;/h1&gt; Dann
+						beim href (href="#")und nach dem # die id eingeben und du hast eine Verlinkung zu der Überschrift.
+					</p>
+				</section>
+				<hr/>
+				<section>
+					<h2>Kommentare</h2>
+					<p>
+						Kommentar-Tags werden verwendet, um Kommentare in den HTML-Quellcode einzufügen. Syntax:
+					</p>
+					<pre>
+						&lt;!-- Write your comments here --&gt;
+					</pre>
+				</section>
+				<hr/>
+				<section>
+					<h2>Listen</h2>
+					<p>
+						<h3>Ungeordnete Listen</h3>
+						<p>
+							Eine ungeordnete Liste beginnt mit dem &lt;ul&gt;-Tag. Jedes Listenelement beginnt mit dem &lt;li&gt;-Tag.
+						</p>
+						<h3>Geordnete Liste</h3>
+						<p>
+							Eine geordnete Liste beginnt mit dem &lt;ol&gt;-Tag. Jedes Listenelement beginnt mit dem &lt;li&gt;-Tag.
+						</p>
+						<h3>Beschreibungsliste</h3>
+						<p>
+							Eine Beschreibungsliste ist eine Liste von Begriffen, mit einer Beschreibung jedes Begriffs. Der &lt;dl&gt;-Tag definiert die 
+							Beschreibungsliste, der &lt;dt&gt;-Tag definiert den Begriff (name) und der &lt;dd&gt;-Tag beschreibt jeden Begriff. z.B.:
+						</p>
+						<pre>
+					&lt;dl&gt;
+						&lt;dt&gt;Coffee&lt;/dt&gt;
+						&lt;dd&gt;- black hot drink&lt;/dd&gt;
+						&lt;dt&gt;Milk&lt;/dt&gt;
+						&lt;dd&gt;- white cold drink&lt;/dd&gt;
+					&lt;/dl&gt;
+						</pre>
+						<h3>Listen in Listen</h3>
+						<p>
+							Man kann auch Liste in Listen machen.
+						</p>
+					</p>
+				</section>
+				<hr/>
+				<section>
+					<h2>Tabellen</h2>
+					<ul>
+						<li>Verwenden Sie das HTML &lt;table&gt; -Element, um eine Tabelle zu definieren</li>
+						<li>Verwenden Sie das HTML &lt;tr&gt; -Element, um eine Tabellenzeile zu definieren</li>
+						<li>Verwenden Sie das HTML &lt;td&gt; -Element zum Definieren von Tabellendaten</li>
+						<li>Verwenden Sie das HTML &lt;th&gt; -Element, um eine Spaltenüberschrift zu definieren</li>
+						<li>Verwenden Sie das HTML &lt;caption&gt; -Element, um eine Tabellenüberschrift zu definieren.</li>
+					</ul>
+					<h3>Zeilen und Spalten verbinden</h3>
+					<p>
+						Verwenden Sie das <b>colspan</b>-Attribut, um eine Zelle in viele Spalten zu verteilen. In diesen Fall würde die SPaltenüberschrift über 2
+						Zellen gehen.
+					</p>
+					<pre>
+						&lt;th colspan="2"&gt;Telephone&lt;/th&gt;
+					</pre>
+					<p>
+						Verwenden Sie das <b>rowspan</b>-Attribut, um eine Zelle über viele Zeilen hinweg zu bilden. In diesen Fall würde Die Zelle über 2 Zeilen gehen
+					</p>
+					<pre>
+						&lt;th rowspan="2"&gt;Telephone:&lt;/th&gt;
+					</pre>
+				</section>
+			</article>
+		</div>		
+	</body>
+</html>
